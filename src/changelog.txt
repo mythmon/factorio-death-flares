@@ -1,0 +1,34 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 20. 05. 2019
+  Features:
+    - Added setting to not require any technology/items to have the flare (it is then just always active).
+    - Added item description to the corpse flare item
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 04. 05. 2019
+  Fixes:
+    - Fixed inventory crash with factorio 0.17.35 breaking the api
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 10. 03. 2019
+  Features:
+    - Beter graphics for the item, kept the old icon for the technology
+    - Added a light source to see the flare in the dark
+  Fixes:
+    - Fixed unknown key technology-description
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 10. 03. 2019
+  Fixes:
+    - Fixed bug on pre player died event
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 26. 02. 2019
+  Features:
+    - Updated to base game 0.17 (0.17.0)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 03. 06. 2018
+  Features:
+    - Initial stand-alone release
