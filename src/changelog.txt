@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 05. 10. 2019
+  Changes:
+    - No longer depends on stdlib
+  Fixes:
+    - Fix a bug that caused crashes when used in some games that didn't start
+      with the mod enabled.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 29. 09. 2019
+  Changes:
+    - Forked Corpse Flares as Death Flares
+  Features:
+    - Flares now last exactly as long as the corpse that spawned them,
+      including de-spawning when mined.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 20. 05. 2019
   Features:
