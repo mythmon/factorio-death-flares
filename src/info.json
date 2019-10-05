@@ -9,7 +9,6 @@
     "factorio_version": "0.17",
     "dependencies": [
         "base >= 0.17",
-        "stdlib >= 1.2.2",
         "! CorpseFlare",
         "? Noxys_QuickerStumpFade"
     ]
