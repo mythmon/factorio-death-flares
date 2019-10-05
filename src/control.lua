@@ -1,6 +1,6 @@
 DeathFlares = {}
 
-function DeathFlares.init(self)
+function DeathFlares.ensureInit(self)
   if not self.inited then
     self.inited = true
     self.flares = {}
@@ -72,7 +72,12 @@ end
 
 -- on load game for first time
 script.on_init(function(event)
-  DeathFlares:init()
+  DeathFlares:ensureInit()
+end)
+
+-- on subsequent loads
+script.on_configuration_changed(function (event)
+  DeathFlares:ensureInit()
 end)
 
 -- called every time a player dies

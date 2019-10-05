@@ -1,7 +1,7 @@
 PACKAGE_NAME := $(shell cat 'src/info.json' | jq -r .name)
 VERSION_STRING := $(shell cat 'src/info.json' | jq -r .version)
 DIST_NAME := $(PACKAGE_NAME)_$(VERSION_STRING)
-SOURCES = $(wildcard src/**/*)
+SOURCES = $(wildcard src/*) $(wildcard src/**/*)
 DIST_DIR = dist
 BUILD_PATH = ${DIST_DIR}/${DIST_NAME}
 ZIP_PATH = ${BUILD_PATH}.zip
