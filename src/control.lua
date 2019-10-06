@@ -8,6 +8,7 @@ function DeathFlares.ensureInit(self)
 end
 
 function DeathFlares.onPrePlayerDied(self, playerId, deathTick)
+  self:ensureInit()
   local shouldCreateFlare = false
 
   if settings.startup["DeathFlares_requireItems"].value then
@@ -32,6 +33,7 @@ function DeathFlares.onPrePlayerDied(self, playerId, deathTick)
 end
 
 function DeathFlares.createNewFlare(self, playerId, deathTick)
+  self:ensureInit()
   local player = game.players[playerId]
   local flare = player.surface.create_entity{
     name="flare-cloud",
@@ -50,6 +52,7 @@ function DeathFlares.createNewFlare(self, playerId, deathTick)
 end
 
 function DeathFlares.removeFlare(self, playerId, deathTick)
+  self:ensureInit()
   local player = game.players[playerId]
   if not player then
     return
@@ -65,6 +68,7 @@ function DeathFlares.removeFlare(self, playerId, deathTick)
 end
 
 function DeathFlares.onEntityMined(self, event)
+  self:ensureInit()
   if event.entity.valid and event.entity.name == 'character-corpse' then
     DeathFlares:removeFlare(event.entity.character_corpse_player_index, event.entity.character_corpse_tick_of_death)
   end
